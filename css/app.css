@@ -1,0 +1,566 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+}
+
+header.navbar-container {
+    position: sticky;
+    width: 100%;
+    max-width: 2500px;
+    padding-block: 1rem;
+    margin-inline: auto;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    top: 0;
+    z-index: 9999;
+}
+
+header.navbar-container .logo h2 {
+    color: #3fab9c;
+}
+
+
+header.navbar-container .nav-list ul {
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem 1rem;
+}
+
+header.navbar-container .nav-list li {
+    list-style-type: none;
+}
+
+header.navbar-container .nav-list li a {
+    padding: 0.5rem 1.5rem;
+    border-radius: 999px;
+    text-decoration: none;
+    font-size: 1.05rem;
+    font-weight: 500;
+    color: black;
+    transition: all 0.2s ease-in-out;
+}
+
+header.navbar-container .nav-list li:hover a {
+    background-color: #0c3436;
+    color: white;
+}
+
+main {
+    flex: 1;
+    width: 100%;
+    display: inline;
+    align-items: center;
+}
+
+main .content {
+    flex: 1 1;
+    font-size: 20px;
+    padding: 60px;
+    height: 89vh;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6)), url('../img/itl.cat_forest-wallpaper_2302739.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    color: whitesmoke;
+    background-position: center;
+}
+
+main .content .content-description {
+    flex: 1 1;
+}
+
+main .content .content-description .title {
+    margin-block: 1rem;
+    font-size: 2rem;
+
+}
+
+main .content .content-description p {
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+    padding: 60px;
+}
+
+main .content .content-description button,
+main .solutions .solutions-item .solutions-description button,
+main .contact .contact-container .form-container button {
+    padding: 0.8rem 2.5rem;
+    border: 3px solid transparent;
+    border-radius: 999px;
+    margin-block-start: 1rem;
+    background-color: #3fab9c;
+    font-family: 'Quicksand', sans-serif;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 700;
+    color: white;
+    cursor: pointer;
+    transition: all 0.15s ease-in;
+}
+
+main .content .content-description button:hover,
+main .solutions .solutions-item .solutions-description button:hover,
+main .contact .contact-container .form-container button:hover {
+    border: 3px solid #3fab9c;
+    background-color: transparent;
+    color: #3fab9c;
+}
+
+main .about {
+    max-width: 1200px;
+    width: 90%;
+    margin: auto;
+    padding: 60px;
+    height: 89vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 1;
+    align-items: center;
+}
+
+main .about .about-text {
+    flex: 1 1 400px;
+
+}
+
+main .about .about-text .title {
+    text-align: center;
+    margin-block: 1rem;
+    font-size: 2rem;
+
+}
+
+main .about .about-text p {
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+    padding: 60px;
+    color: #555;
+
+}
+
+main .about .about-image {
+    flex: 1 1 400px;
+    padding: 20px;
+
+}
+
+main .about .about-image img {
+    display: block;
+    height: 400px;
+    max-width: 100%;
+    margin: auto;
+    object-fit: cover;
+    object-position: right;
+
+}
+
+
+main .solutions {
+    padding: 60px;
+    height: 89vh;
+    background-color: #0c3436;
+    align-items: center;
+}
+
+main .solutions .solutions-heading {
+    font-size: 3rem;
+    text-align: center;
+    font-weight: 400;
+    color: white;
+}
+
+main .solutions .solutions-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px 0px 30px 0px;
+}
+
+main .solutions .solutions-container img {
+    display: block;
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    object-position: center;
+}
+
+main .solutions .solutions-item {
+    display: flex;
+    flex: 1 1 600px;
+    justify-content: space-evenly;
+    margin: 3rem;
+}
+
+main .solutions .solutions-item .solutions-description {
+    margin: auto 1.5rem;
+}
+
+main .solutions .solutions-item .solutions-title {
+    font-size: 2rem;
+    font-weight: 400;
+    color: beige;
+}
+
+main .solutions .solutions-item .solutions-description p {
+    font-size: 1rem;
+    color: aliceblue;
+    font-weight: 500;
+}
+
+main .contact {
+    padding: 2rem;
+}
+
+main .contact .contact-container {
+    display: flex;
+    background-color: #fff;
+    justify-content: space-around;
+}
+
+main .contact .contact-container .contact-image {
+    display: block;
+    height: 400px;
+    object-fit: cover;
+    object-position: center;
+}
+
+main .contact .contact-container .form-container {
+    padding: 1rem;
+    width: 50%;
+    margin: auto;
+}
+
+main .contact .contact-container .form-container input {
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #ddd;
+    padding: 1rem 0;
+    box-shadow: none;
+    outline: none;
+    margin-bottom: 1rem;
+    color: #444;
+    font-weight: 500;
+}
+
+main .contact .contact-container .form-container textarea {
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #ddd;
+    padding: 1rem 0;
+}
+
+main .contact .contact-container .form-container h2 {
+    font-size: 3rem;
+    font-weight: 400;
+    color: #444;
+    margin-bottom: 1rem;
+}
+
+main aside {
+    position: fixed;
+    inset-block: 0;
+    inset-inline-end: 0;
+}
+
+main aside .social-media {
+    height: 100%;
+    display: flex;
+}
+
+main aside .social-media ul {
+    padding: 1.5rem 1rem;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    margin: auto;
+    background-color: #3fab9c;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+main aside .social-media li {
+    list-style-type: none;
+}
+
+
+main aside .social-media li a img {
+    display: block;
+    width: 50px;
+    height: 80px;
+    margin: auto;
+    object-fit: contain;
+}
+
+footer {
+    padding: 20px;
+    color: white;
+    background-color: #0c3436;
+    font-weight: bold;
+    text-align: center;
+}
+
+footer h2 {
+    text-align: center;
+    font-size: 2rem;
+    padding: 3rem;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 768px) {
+    header.navbar-container {
+        flex-direction: column;
+
+    }
+
+    header.navbar-container .nav-list ul {
+        flex-wrap: wrap;
+        column-gap: 0.5rem;
+    }
+
+    main {
+        padding: 1rem 3rem;
+    }
+
+    main .content {
+        flex-direction: column;
+    }
+
+    main .content .content-description .title {
+        font-size: 3rem;
+    }
+
+    main .content .content-description p {
+        font-size: 1rem;
+    }
+
+    main .content .content-image {
+        order: -1;
+    }
+
+    main .about .about-text p {
+        font-size: 1rem;
+        padding: 20px;
+
+    }
+
+    main .about .about-image img {
+        height: 200px;
+
+    }
+
+    main .solutions {
+        padding: 60px;
+        height: 100vh;
+    }
+
+    main .solutions .solutions-heading {
+        font-size: 3rem;
+    }
+
+    main .solutions .solutions-container {
+        padding: 0px 0px 30px 0px;
+    }
+
+    main .solutions .solutions-container .solutions-image {
+        padding: 20px;
+    }
+
+    main .solutions .solutions-container .solutions-image img {
+        display: block;
+        width: 70px;
+        height: 100px;
+        margin: auto;
+        object-fit: contain;
+    }
+
+
+    main .contact {
+        flex: 1 1;
+    }
+
+    main .contact .contact-container {
+        flex: 1 1;
+        display: flex;
+        align-items: center;
+    }
+
+
+    main .contact .contact-container .contact-image img {
+        display: block;
+        width: 200px;
+        height: 200px;
+        margin: auto;
+        object-fit: contain;
+    }
+
+    main aside .social-media li a img {
+        display: block;
+        width: 20px;
+        height: 50px;
+        margin: auto;
+        object-fit: contain;
+    }
+
+    footer h2 {
+        text-align: center;
+        font-size: 1rem;
+        padding: 2rem;
+        font-weight: 200;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    header.navbar-container {
+        flex-direction: column;
+
+    }
+
+    header.navbar-container .nav-list ul {
+        flex-wrap: wrap;
+        column-gap: 0.5rem;
+    }
+
+    main {
+        padding: 1rem 3rem;
+    }
+
+    main .content {
+        flex-direction: column;
+    }
+
+    main .content .content-description .title {
+        margin-block: 1rem;
+        font-size: 2rem;
+
+    }
+
+    main .content .content-description p {
+        font-size: 1.2rem;
+        line-height: 1.7rem;
+        padding: 10px;
+    }
+
+    main .content .content-image {
+        order: -1;
+    }
+
+    main .about .about-text {
+        flex: 1 1 400px;
+        padding: 20px;
+
+    }
+
+    main .about .about-text p {
+        font-size: 1rem;
+        padding: 0px;
+        line-height: 1rem;
+
+    }
+
+    main .about .about-text .title {
+        text-align: center;
+        margin-block: 1rem;
+        font-size: 1.4rem;
+
+    }
+
+    main .about .about-image img {
+        height: 80px;
+
+    }
+
+    main .solutions {
+        padding: 20px;
+        height: 100vh;
+    }
+
+    main .solutions .solutions-heading {
+        font-size: 2rem;
+    }
+
+    main .solutions .solutions-item .solutions-title {
+        font-size: 1rem;
+        font-weight: 100;
+    }
+
+    main .solutions .solutions-item .solutions-description p {
+        font-size: 0.8rem;
+        color: aliceblue;
+        font-weight: 100;
+    }
+
+
+    main .solutions .solutions-container .solutions-image img {
+        display: block;
+        width: 40px;
+        height: 80px;
+        margin: auto;
+        object-fit: contain;
+    }
+
+
+    main .contact {
+        flex: 1 1;
+    }
+
+    main .contact .contact-container {
+        flex: 1;
+        display: flex;
+        align-items: center;
+    }
+
+
+    main .contact .contact-container .contact-image img {
+        display: block;
+        width: 80px;
+        height: 80px;
+        margin: 1rem;
+        object-fit: contain;
+    }
+
+    main .contact .contact-container .form-container {
+        width: 50%;
+        margin: 1rem;
+        padding: 0;
+    }
+
+    main .contact .contact-container .form-container input {
+        display: block;
+        width: 100%;
+        border: none;
+        border-bottom: 2px solid #ddd;
+        padding: 1rem 0;
+        box-shadow: none;
+        outline: none;
+        margin-bottom: 1rem;
+        color: #444;
+        font-weight: 500;
+    }
+
+    main .contact .contact-container .form-container textarea {
+        display: block;
+        width: 100%;
+        border: none;
+        border-bottom: 2px solid #ddd;
+        padding: 1rem 0;
+    }
+
+    main .contact .contact-container .form-container h2 {
+        font-size: 2rem;
+        font-weight: 400;
+        color: #444;
+        margin-bottom: 1rem;
+    }
+}
